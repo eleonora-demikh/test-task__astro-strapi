@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card";
+
+import fetchApi from "../lib/strapi";
+
+type CardType = {
+  id: number;
+  attributes: {
+    title: string;
+    description: string;
+    content: string;
+    slug: string;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
+  };
+};
+
+const cards = await fetchApi<CardType[]>({
+  endpoint: "cards",
+  wrappedByKey: "data",
+});
+---
+
+<Layout title='Nice title'>
+  <h1 class='text-5xl font-mono text-center my-3'>
+    Yes, it's my dog on the first card :)
+  </h1>
+  {cards.map((card) => <Card info={card} client:visible />)}
+</Layout>

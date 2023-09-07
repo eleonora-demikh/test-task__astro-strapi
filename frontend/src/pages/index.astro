@@ -24,8 +24,8 @@ const cards = await fetchApi<CardType[]>({
 ---
 
 <Layout title='Nice title'>
-  <h1 class='text-5xl font-mono text-center my-3'>
-    Yes, it's my dog on the first card :)
+  <h1 class='text-2xl font-mono text-center my-3'>
+    There would be a card with my dog here, but...
   </h1>
-  {cards.map((card) => <Card info={card} client:visible />)}
+  {cards && cards.map((card) => <Card info={card} client:visible />)}
 </Layout>

@@ -40,6 +40,12 @@ This command will start both the backend server on port 1337 and the frontend on
 [http://localhost:1337](http://localhost:1337)
 This is where the server should be running. 
 
+
+- To access the frontend part of your application, open your web browser and go to:
+
+[http://localhost:3000](http://localhost:3000)
+This is where the frontend part of your project should be available.
+
 # Important!
   Create an account and log in.
 Go to the Content Manager section and create a new entity called 'Cards'. Then press Save and Publish.
@@ -51,11 +57,5 @@ As an example, you can use the following data:
 - imgUrl: "https://i.postimg.cc/WzsnNTsX/Finik.jpg"
 
 Go to the Server Settings and select 'Roles' in the USERS & PERMISSIONS PLUGIN. In Permissions/Public, grant access to 'find' and 'findOne' options.
-
-
-- To access the frontend part of your application, open your web browser and go to:
-
-[http://localhost:3000](http://localhost:3000)
-This is where the frontend part of your project should be available.
 
 Now you should be able to interact with your project's frontend and backend locally using the specified ports. Make sure to follow any project-specific instructions for further development and testing.

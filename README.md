@@ -2,7 +2,8 @@
 
 - Open the Project: Navigate to your project's root directory using your terminal.
 
-- Ensure that your Node version is not lower than the recommended one. Recommended version: v18.16.0
+- Ensure that your Node version is not lower than the recommended one.
+- !!! Recommended version: v18.16.0
 
 Run the script below in the root folder to install the necessary npm packages (equivalent to npm install).
 
